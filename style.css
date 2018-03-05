@@ -1,0 +1,473 @@
+/*
+ *	Theme Name:		Tuto Wordpress
+ *	Theme URI:		http://www.finalclap.com/
+ *	Description:	Thème de base pour apprendre à créer des thèmes pour Wordpress
+ *	Author:			www.finalclap.com
+ *	Version:		1.0
+**/
+body{
+	margin: 0;
+	padding: 0;
+	background: #EAEAEA;
+	font: 10pt Arial, Helvetica, sans-serif;
+	color: #555555;
+}
+a{
+	outline: none;
+	color: #0066CC;
+	text-decoration: none;
+}
+a:hover{text-decoration: underline;}
+acronym{cursor: default;}
+img{border: 0;}
+h1, h2, h3{line-height: 1em;}
+p{margin: 0 0 13px;}
+
+a:focus, button:focus, input:focus{outline: none;}
+button::-moz-focus-inner{border: 0;}
+input::-moz-focus-inner{border: 0;}
+
+
+
+/*
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	LAYOUT
+	------
+	Positionnement des principaux blocs de la page : header, content, sidebar, footer
+_____________________________________________________________________________________
+*/
+
+/*
+ *	======
+ *	HEADER
+ *	======
+**/
+#header{
+	background: silver;
+	/*height: 130px;*/
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	padding: 1px 0; /* correction mini bug provoqué par le contenu */
+}
+#manu {
+    background: yellow;
+}
+#header #menu{
+	/*position: absolute;
+	bottom: 10px;
+	left: 11px;*/
+	/*width: 600px;
+	height: 30px;*/
+	margin: 30px 10px 9px;
+}
+#header #menu a{
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	
+	background: #0C85CA;
+	color: #eee;
+	
+	font: bold 12pt Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	padding: 5px 10px;
+	margin-right: 5px;
+}
+#header #menu a:hover{
+	background: #777;
+}
+
+#header #title{
+	font: bolder 18pt Arial;
+	margin: 10px 13px 5px;
+}
+
+#header #description{
+	margin: auto 15px;
+	font: 9pt Arial;
+}
+
+
+
+/*
+ *	=======
+ *	CONTENT
+ *	=======
+**/
+.wrap{
+	width: 960px;
+	margin: 0 auto;
+}
+#content{
+	float: left;
+	width: 660px;
+	margin: 0;
+	padding: 1px 0; /* correction mini bug provoqué par le contenu */
+	background-color: gainsboro;
+}
+
+
+/*
+ *	=======
+ *	SIDEBAR
+ *	=======
+**/
+#sidebar{
+	float: right;
+	width: 300px;
+	background: rgba(100,100,100,0.05);
+	-moz-border-radius: 0 0 50px 0;
+	border-radius: 0 0 50px 0;
+}
+#sidebar img{max-width: 263px; border: 6px solid #e1e1e1;}
+#sidebar a:hover{text-decoration: none; color: black;}
+
+#sidebar ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li{
+	padding: 10px 12px;
+}
+
+#sidebar h2{
+	margin: 5px 0 8px;
+}
+
+#sidebar .widget_search label{
+	display: none;
+}
+
+#sidebar li ul{
+	list-style: none;
+	margin-left: 10px;
+}
+
+#sidebar li ul li{padding: 0 0 4px;}
+#sidebar li ul li a{color: #555;}
+
+
+
+/*
+ *	======
+ *	FOOTER
+ *	======
+**/
+#footer_wrap{
+	width: 960px;
+	margin: 10px auto 150px;
+	border: 1px dotted silver;
+}
+#footer{
+	width: 935px;
+	margin: 0 auto;
+	padding: 5px 0;
+	line-height: 18px;
+	font-size: 8pt;
+}
+
+#footer a{color: #555;}
+#footer a:hover{text-decoration: none; color: black;}
+
+
+
+
+
+
+
+
+
+/*
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	CONTENU
+	-------
+	Contenu des blocs (articles...)
+_____________________________________________________________________________________
+*/
+h1{
+	margin: 0;
+	padding: 3px 0 15px;
+}
+
+h2{
+	margin: 50px 0 8px;
+	color: #3783AD;
+	font-weight: lighter;
+}
+
+#content .post{
+	margin: 20px;
+	line-height: 18px;
+}
+
+#content p{
+	margin: 0 0 13px;
+}
+
+#content .post .image{
+	margin-right: 18px;
+}
+
+#content .post .image img{
+	border: 9px solid #ddd;
+	border-bottom-width: 28px;
+	display: block;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#content .post .image em{
+	position: relative;
+	top: -23px;
+	left: 10px;
+}
+
+#content .post .clear{
+	clear: left;
+}
+
+#content .post strong{color: black;}
+
+#content .more-link{
+	color: #0088CC;
+	font: 10pt Arial;
+	text-decoration: none;
+	padding-right: 10px;
+	
+	display: block;
+	background: none;
+	margin-top: 8px 0 0;
+}
+#content .more-link:hover{text-decoration: underline;}
+
+#content .hentry{
+	margin: 20px 20px 40px;
+	border: 1px dashed gray;
+	padding: 10px 15px;
+}
+
+/*--Storytitle--*/
+#content .storytitle a{
+	font-size: 16pt;
+	color: #0C85CA;
+	font-weight: lighter;
+}
+#content .storytitle a:hover{text-decoration: none;}
+
+
+/*
+ *	=================
+ *	INFO (metas post)
+ *	=================
+**/
+#content .info{
+	background: #EEE;
+	width: 286px;
+	border: 1px solid #ddd;
+	margin: 20px;
+	float: right;
+	padding: 10px;
+}
+
+#content .info h1{
+	margin: 0 0 8px;
+	padding: 0;
+	font: 14pt Arial;
+	color: black;
+	font-weight: lighter;
+}
+
+#content .info table{
+	width: 100%;
+	background: #E6E6E6;
+	border: 1px solid #D8D8D8;
+	border-collapse: collapse;
+}
+
+#content .info td{
+	padding: 2px 5px;
+	font: 9pt Arial;
+}
+
+#content .info th{
+	width: 50%;
+	font-weight: lighter;
+	color: white;
+	height: 26px;
+}
+#content .info .good{background-color: green;} /*#469E0C*/
+#content .info .bad{background-color: #FF0000}
+
+
+/*
+ *	==========
+ *	Pagination
+ *	==========
+**/
+#content .pagination{
+	text-align: center;
+	height: 48px;
+}
+#content .pagination a{
+	padding: 6px 10px;
+	font-weight: bold;
+	
+	background: #0C85CA;
+	color: white;
+	
+	border: 1px solid #e7e7e7;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#content .pagination a:hover{
+	background: silver;
+	color: black;
+	text-decoration: none;
+}
+
+
+/*
+ *	====
+ *	Tags
+ *	====
+**/
+#content .tags{
+	background: url('images/Tag_64.png') 20px 10px no-repeat #BCD6E6;
+	padding: 6px 6px 0 100px;
+	height: 62px;
+	margin: 32px 0 10px;
+}
+#content .tags a{
+	display: block;
+	float: left;
+	background: #77AACD;
+	color: white;
+	font-weight: bold;
+	margin: 3px;
+	padding: 3px 5px;
+	-moz-border-radius: 3px;
+}
+#content .tags a:hover{background: #4182AE; text-decoration: none;}
+
+
+
+
+
+
+
+
+/*
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+	COMMENTS
+	--------
+	Commentaires
+_____________________________________________________________________________________
+*/
+#comments a:hover{text-decoration: none;}
+/*--Titre commentaire (XX Commentaies et Laisser un commentaire--*/
+#comments .etape{
+	padding: 1px 0 0 70px;
+	height: 64px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#comments .etape a{ /* Laisser un commentaire */
+	float: right;
+	margin-top: 12px;
+	padding: 4px 8px;
+	background: #dc1039;
+	-moz-border-radius: 10px;
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;
+}
+#comments #comments-title{background: url('images/Comments-64.png') 0px -2px no-repeat;}
+#comments #reply-title{background: url('images/Comment-add-64.png') 0px -2px no-repeat;}
+
+/*
+ *	===========
+ *	Commentlist
+ *	===========
+**/
+#comments .commentlist{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#comments .commentlist li{
+	background: #EAEAEA;
+	-moz-border-radius: 10px;
+	margin: 0 20px 20px 20px;
+	padding: 16px;
+}
+#comments .commentlist .avatar{
+	padding: 5px;
+	background: #dfdfdf;
+	float: left;
+}
+
+#comments .commentlist .metadata{margin: 2px 0 15px 52px;}
+#comments .commentlist .metadata a:hover{color: black;}
+#comments .commentlist .metadata .pseudo a{color: #dc1039;}
+#comments .commentlist .metadata span a{color: #555555;}
+
+#comments .commentlist .metadata .pseudo{
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bold;
+}
+#comments .commentlist li p{
+	clear: left;
+	margin-bottom: 0;
+}
+
+/*
+ *	======================
+ *	Formulaire commentaire
+ *	======================
+**/
+#comments #respond a:hover{text-decoration: underline;}
+
+#comments #respond .comment-form{
+	background: #EAEAEA;
+	-moz-border-radius: 10px;
+	margin: 0 20px 20px;
+	padding: 16px;
+	border: 1px solid #E5E5E5;
+}
+#comments #respond form input[type=text], #content #respond form textarea{
+	display: block;
+	margin-bottom: 20px;
+	width: 280px;
+	height: 22px;
+	border: 1px solid #E5E5E5;
+	-moz-border-radius: 6px;
+	padding: 4px;
+	font: 13pt Arial;
+}
+#comments #respond form textarea{
+	width: 530px;
+	height: 180px;
+	font: 10pt Arial;
+}
+#comments #respond form button, #comments #respond input[type=submit]{
+	outline: none;
+	background: url('images/button.jpg') top left repeat-x;
+	border: 1px solid silver;
+	-moz-border-radius: 6px;
+	height: 40px;
+	width: 220px;
+	font: 11pt Arial;
+	font-weight: bold;
+	color: #555555;
+	padding: 10px 0;
+}
+#comments #respond form button:hover, #comments #respond input[type=submit]:hover{
+	background-position: bottom;
+	border: 1px solid gray;
+	color: whitesmoke;
+}
+#comments #respond form label{font-weight: bold;}
